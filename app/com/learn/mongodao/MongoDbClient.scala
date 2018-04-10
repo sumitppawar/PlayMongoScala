@@ -1,5 +1,9 @@
 package com.learn.mongodao
 
-object MongoClient {
+import org.mongodb.scala.MongoClient
 
+object MongoDbClient {
+
+  //Package private
+  private[mongodao] val client = MongoClient()
 }
